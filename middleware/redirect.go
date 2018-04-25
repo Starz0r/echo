@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/labstack/echo"
+	"github.com/starz0r/sonar-go"
 )
 
 // RedirectConfig defines the config for Redirect middleware.

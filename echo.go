@@ -8,8 +8,8 @@ Example:
   import (
     "net/http"
 
-    "github.com/labstack/echo"
-    "github.com/labstack/echo/middleware"
+    "github.com/starz0r/sonar-go"
+    "github.com/starz0r/sonar-go/middleware"
   )
 
   // Handler

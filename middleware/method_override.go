@@ -1,6 +1,6 @@
 package middleware
 
-import "github.com/labstack/echo"
+import "github.com/starz0r/sonar-go"
 
 type (
 	// MethodOverrideConfig defines the config for MethodOverride middleware.

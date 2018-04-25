@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/labstack/echo"
+	"github.com/starz0r/sonar-go"
 	"github.com/labstack/gommon/random"
 )
 
