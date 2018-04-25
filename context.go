@@ -13,6 +13,8 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+
+	jsoniter "github.com/json-iterator/go"
 )
 
 type (
@@ -447,6 +449,36 @@ func (c *context) JSONPBlob(code int, callback string, b []byte) (err error) {
 	}
 	_, err = c.response.Write([]byte(");"))
 	return
+}
+
+func (c *context) JSONiterDefault(code int, i interface{}) (err error) {
+	j, err := jsoniter.ConfigDefault.Marshal(&i)
+
+	if err != nil {
+		return
+	}
+
+	return c.Blob(code, MIMEApplicationJSONCharsetUTF8, j)
+}
+
+func (c *context) JSONiterCompatible(code int, i interface{}) (err error) {
+	j, err := jsoniter.ConfigCompatibleWithStandardLibrary.Marshal(&i)
+
+	if err != nil {
+		return
+	}
+
+	return c.Blob(code, MIMEApplicationJSONCharsetUTF8, j)
+}
+
+func (c *context) JSONiterFastest(code int, i interface{}) (err error) {
+	j, err := jsoniter.ConfigFastest.Marshal(&i)
+
+	if err != nil {
+		return
+	}
+
+	return c.Blob(code, MIMEApplicationJSONCharsetUTF8, j)
 }
 
 func (c *context) XML(code int, i interface{}) (err error) {
