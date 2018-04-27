@@ -139,13 +139,13 @@ type (
 		JSONPBlob(code int, callback string, b []byte) error
 
 		// JSONiter sends a JSON response with a different marshaller.
-		JSONiterDefault(code int, i interface{})
+		JSONiterDefault(code int, i interface{}) error
 
 		// JSONiter sends a JSON response with a different marshaller.
-		JSONiterCompatible(code int, i interface{})
+		JSONiterCompatible(code int, i interface{}) error
 
 		// JSONiter sends a JSON response with a different marshaller.
-		JSONiterFastest(code int, i interface{})
+		JSONiterFastest(code int, i interface{}) error
 
 		// XML sends an XML response with status code.
 		XML(code int, i interface{}) error
