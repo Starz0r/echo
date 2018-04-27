@@ -1,6 +1,6 @@
 package middleware
 
-import "github.com/starz0r/sonar-go"
+import "github.com/Starz0r/sonar-go"
 
 type (
 	// MethodOverrideConfig defines the config for MethodOverride middleware.

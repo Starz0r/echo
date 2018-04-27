@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"strings"
 
+	"github.com/Starz0r/sonar-go"
 	"github.com/dgrijalva/jwt-go"
-	"github.com/starz0r/sonar-go"
 )
 
 type (

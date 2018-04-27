@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/starz0r/sonar-go"
+	"github.com/Starz0r/sonar-go"
 	"github.com/labstack/gommon/bytes"
 )
 

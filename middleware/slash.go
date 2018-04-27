@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/starz0r/sonar-go"
+	"github.com/Starz0r/sonar-go"
 )
 
 type (

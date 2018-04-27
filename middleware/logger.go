@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/starz0r/sonar-go"
+	"github.com/Starz0r/sonar-go"
 	"github.com/labstack/gommon/color"
 	"github.com/valyala/fasttemplate"
 )

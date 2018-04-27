@@ -14,7 +14,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/starz0r/sonar-go"
+	"github.com/Starz0r/sonar-go"
 )
 
 // TODO: Handle TLS proxy

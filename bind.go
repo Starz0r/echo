@@ -5,10 +5,11 @@ import (
 	"encoding/xml"
 	"errors"
 	"fmt"
-	"net/http"
 	"reflect"
 	"strconv"
 	"strings"
+
+	http "github.com/valyala/fasthttp"
 )
 
 type (

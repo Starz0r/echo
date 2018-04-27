@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/starz0r/sonar-go"
+	"github.com/Starz0r/sonar-go"
 	"github.com/labstack/gommon/random"
 	"github.com/stretchr/testify/assert"
 )
